@@ -16,6 +16,7 @@ The algorithm is simple. We run through every column of the matrix and every row
 each column using variables. For a matrix entry, matrix[i][j], we check to see if it is even
 by using the modulo function. We keep a running counter of every even integer we run into and every 
 odd integer we run into. 
+
 To make this a little bit challenging, I have eliminated m and n in my solution.
 Therefore, my main method only takes in a matrix. As a matrix is an array, we know that the length of the matrix 
 will result in the number of columns and the length of every column of the matrix will yield the number of rows.
