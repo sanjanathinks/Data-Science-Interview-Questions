@@ -52,12 +52,16 @@ final_revenue_list = flatten(Revenue_list)
 print(month_val + " "+ channel_val + " " + str(average(final_revenue_list)))
 ````
 Let's dissect this solution to get a clearer sense of what we are doing.
+
 The flatten method takes a list of lists and makes it into a list.
+
 The average method finds the mean of a list. We take the return value from the flatten method and input it into the 
 average method to find the mean.
 Given a value for the month and a value for the channel, we iterate through the month and channel rows
 in order to find an instance where our month values coincide with our given values.
+
 We then create a list of the revenue row, which contains our revenue for the given month and channel values.
 myList creates a **list of lists**, not a list. We can tell this by the syntax of the expression.
 We then append myList to a Revenue_list variable and flatten it to get a single list.
+
 Finally, we print the month, channel and average revenue, as per our result's format.
